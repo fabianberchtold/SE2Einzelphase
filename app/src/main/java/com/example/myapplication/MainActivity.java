@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void berechneMatrikelnummer(){
-        berechneMatrikelnummerTask berechne = new berechneMatrikelnummerTask(serverAntwort);
+        berechneMatrikelnummerTask berechne = new berechneMatrikelnummerTask(this);
         berechne.execute(matrikelnummer.getText().toString());
     }
 
