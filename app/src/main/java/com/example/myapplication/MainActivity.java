@@ -18,6 +18,7 @@ import java.net.Socket;
 
 public class MainActivity extends AppCompatActivity {
     private Button abschicken;
+    private Button berechnen;
     private EditText matrikelnummer;
     private TextView serverAntwort;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         abschicken = findViewById(R.id.button);
+        berechnen = findViewById(R.id.calculateButton);
         matrikelnummer = findViewById(R.id.login);
         serverAntwort = findViewById(R.id.antwort);
 
@@ -33,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 sendTextToServer();
+            }
+        });
+
+        berechnen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
