@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        abschicken.findViewById(R.id.button);
-        matrikelnummer.findViewById(R.id.login);
-        serverAntwort.findViewById(R.id.antwort);
+        abschicken = findViewById(R.id.button);
+        matrikelnummer = findViewById(R.id.login);
+        serverAntwort = findViewById(R.id.antwort);
 
         abschicken.setOnClickListener(new View.OnClickListener() {
             @Override
