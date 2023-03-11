@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:text="Gib deine Matrikelnummer ein"
         android:textSize="20dp"
-        android:inputType="number"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,6 +54,18 @@
         android:backgroundTint="#3F51B5"
         android:text="Abschicken"
         app:layout_constraintTop_toBottomOf="@id/antwort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </Button>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFEB3B"
+        android:text="Berechne"
+        app:layout_constraintTop_toBottomOf="@id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
