@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         berechnen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                berechneMatrikelnummer();
 
             }
         });
@@ -50,6 +51,11 @@ public class MainActivity extends AppCompatActivity {
     private void sendTextToServer(){
         sendTextToServerTask toServer = new sendTextToServerTask(this);
         toServer.execute(matrikelnummer.getText().toString());
+    }
+
+    private void berechneMatrikelnummer(){
+        berechneMatrikelnummerTask berechne = new berechneMatrikelnummerTask(serverAntwort);
+        berechne.execute(matrikelnummer.getText().toString());
     }
 
     private static class sendTextToServerTask extends AsyncTask<String,Void,String> {
